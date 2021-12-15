@@ -1,0 +1,30 @@
+div.container-form {    
+    margin: -6% auto auto auto;
+    width: 35%;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: whitesmoke;
+}
+
+.hr {
+    margin: 0 0 0 0;
+}
+
+h2 {
+    padding-top: 8px;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+.joinNow
+{
+  background-color: #eff6ff;
+  padding: 140px 100px;
+}
+.ng-valid[required], .ngvalid.required {
+    border-left: 5px solid #42A948;
+}
+.ng-valid:not(form) {
+    border-left: 5px solid #a94442;
+}

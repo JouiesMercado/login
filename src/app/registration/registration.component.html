@@ -1,0 +1,58 @@
+<section class="joinNow">
+<div class="container-form">
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" class="row g-3">
+
+  <div class="col-12">
+    <h2>Sign Up Now!</h2>
+    <p>Find your pet a match! It's quick and easy.</p>
+  </div>
+  <hr class="hr">
+
+    <div class="col-12">
+      <label for="emailAddress" class="form-label">Email Address</label>
+      <input type="email" 
+             name="email" 
+             ngModel 
+             required 
+             email="true"
+             #email="ngModel"
+             class="form-control" 
+             id="emailAdd" 
+             placeholder="Enter Email Address" 
+             >
+    </div>
+    <div class="col-12">
+      <label for="homeAdd" class="form-label">Home Address</label>
+      <input type="address" 
+             name="address"
+             ngModel 
+             required 
+             #address="ngModel"
+             class="form-control" 
+             id="address" 
+             placeholder="Enter Address" 
+             >
+    </div>
+    <div class="col-12">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" 
+             name="password"
+             ngModel 
+             required 
+             minlength="8"
+             #password="ngModel"
+             class="form-control" 
+             id="password" 
+             placeholder="Enter Password" 
+             >
+      </div>
+
+    <div class="col-12">
+      <button type="submit" 
+              [disabled]="f.invalid"
+              class="btn btn-primary"
+              >Sign up <i class="fas fa-sign-in-alt"></i></button>
+    </div>
+  </form>
+</div>
+</section>
